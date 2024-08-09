@@ -10,10 +10,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # fetch dataset 
+st.subtitle('Original Data')
 lenses = fetch_ucirepo(id=58) 
 st.write(lenses)
 # Extract features
 
+st.subtitle('Extracted Data')
 data = lenses.data.features
 st.write(data)
 #y = lenses.data.targets 
